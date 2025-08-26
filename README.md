@@ -53,7 +53,9 @@ sh ./demo-training-run.sh
 ```
 
 #### **2.3. Fine-tuning base on a Pre-trained Model adapt to various application scenarios (RWKV Offline Translate model)**
-   **The RWKV Offline Translate model Huggingface Repo [ 🤗RWKV_v7_G1_Translate](https://huggingface.co/Alic-Li/RWKV_v7_G1_Translate_ctx4096_20250620)**
+   **The RWKV Translate model Huggingface Repo [🤗 RWKV_v7_G1_Translate](https://huggingface.co/Alic-Li/RWKV_v7_G1_Translate_ctx4096_20250620)**
+   
+   **The RWKV Translate model HuggingFace Space (Only two CPU) [🤗 RWKV_v7_G1_Translate_Space](https://huggingface.co/spaces/Alic-Li/RWKV_v7_G1_0.4B_Translate_ctx4096)**
 *   **Instruction Dataset Preparation:**
     *   Datasets format {"text": "Chinese: text......\n\nEnglish: text......"}
     *   [🤗 Processed datasets Huggingface URL](https://huggingface.co/datasets/Alic-Li/Translate_datasets)
@@ -79,18 +81,18 @@ sh ./demo-training-run.sh
     *   Software: Ubuntu 24.04 LTS, AMD ROCm™ 6.4 Softeware stack
 
 #### **3.2. Pre-training a Extreme miniaturization LLM**
-
+   **The MiniRWKV v7 model HuggingFace Space (Only two CPU) [🤗 Mini_RWKV_7_34.2M Space](https://huggingface.co/spaces/Alic-Li/Mini_RWKV_7_34.2M)**
 ![img](./img/rocminfo.png)
 
 This section will guide researchers and Experimental the RWKV V7 Architecture  Multimodal Model on single AMD Radeon™ GPUs on a desktop PC equipped with singe consumer AMD Radeon™ GPU. [The Mini RWKV 34.2M GitHub Repo](https://github.com/Alic-Li/Mini_RWKV_7)
 
 ##### Mini RWKV 34.2M Pre-training & SFT training
 
-ctx 512 pre-train Loss
+**ctx 512 pre-train Loss**
 
 ![img](./img/Loss.png)
 
-ctx 2048 SFT Loss
+**ctx 2048 SFT Loss**
 
 ![img](./img/SFTloss_2048.png) 
 
